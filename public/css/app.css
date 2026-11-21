@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #f8fafc;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #1f2937;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.navbar-links a {
+    padding-bottom: .25rem;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-links a.active {
+    border-bottom-color: #93c5fd;
+}
+
+.container {
+    width: min(960px, calc(100% - 2rem));
+    margin: 2rem auto;
+    flex: 1;
+}
+
+.page-heading,
+.form-actions,
+.detail-actions,
+.actions {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.page-heading {
+    justify-content: space-between;
+}
+
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+th,
+td {
+    padding: .75rem;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    background: #f3f4f6;
+}
+
+.form {
+    max-width: 40rem;
+}
+
+.form-group {
+    margin-top: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: .35rem;
+    font-weight: 600;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    max-width: 40rem;
+    padding: .55rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background: #ffffff;
+}
+
+.checkbox-group label,
+.checkbox-group input {
+    width: auto;
+    display: inline;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: .35rem;
+}
+
+.error {
+    color: #b42318;
+    margin: .35rem 0 0;
+}
+
+.alert {
+    margin-bottom: 1rem;
+    padding: .75rem 1rem;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #146c43;
+    background: #d1e7dd;
+    border: 1px solid #badbcc;
+}
+
+.button {
+    display: inline-block;
+    padding: .55rem .85rem;
+    border: 0;
+    border-radius: 4px;
+    color: #ffffff;
+    background: #2563eb;
+    font: inherit;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-secondary {
+    color: #1f2937;
+    background: #e5e7eb;
+}
+
+.button-danger {
+    background: #b42318;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.details {
+    max-width: 40rem;
+}
+
+.details dt {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.details dd {
+    margin: .25rem 0 0;
+}
+
+.footer {
+    padding: 1rem 2rem;
+    color: #ffffff;
+    background: #1f2937;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
